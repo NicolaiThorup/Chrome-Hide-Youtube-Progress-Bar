@@ -1,0 +1,26 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+        width:100px
+      }
+    </style>
+  </head>
+  <body>
+    Hide Youtube progress bar
+    <select id="active">
+      <option value="on">On</option>
+      <option value="off">Off</option>
+    </select>
+    <script src="popup.js"></script>
+  </body>
+</html>
